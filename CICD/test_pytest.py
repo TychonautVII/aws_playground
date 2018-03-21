@@ -15,21 +15,23 @@ import hypothesis.strategies as st
 
 @pytest.fixture
 def data():
-	return [1,2,3]
+    return [1,2,3]
 
 @pytest.fixture
 def answer():
-	return 2
+    return 2
 
-@given(st.lists(st.floats()))
+@given(st.lists(st.integers()))
 def means_the_same(xs):
     # This will generate lists of arbitrary length (usually between 0 and
     # 100 elements) whose elements are integers.
+    print("running test")
 
-	if len(xs)>0:
-	    assert source.my_mean(xs) == source.np_mean(xs)
-	else:
-		assert True
+    if len(xs)>0:
+        assert source.my_mean(xs) == source.np_mean(xs)
+    else:
+        assert True
 
 def test_mymean(data,answer):
-	assert source.my_mean(data) == answer
+    print("running simple test")
+    assert source.my_mean(data) == answer
