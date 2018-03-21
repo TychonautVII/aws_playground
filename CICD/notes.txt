@@ -1,0 +1,8 @@
+https://docs.aws.amazon.com/codebuild/latest/userguide/sample-python-hw.html
+https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials.html
+
+import unittest
+
+pytest and hypothesis
+http://docs.python-guide.org/en/latest/writing/tests/
+
