@@ -6,3 +6,5 @@ import unittest
 pytest and hypothesis
 http://docs.python-guide.org/en/latest/writing/tests/
 
+I'll try this first with AWS code star
+
